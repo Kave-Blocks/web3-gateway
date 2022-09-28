@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import close from "../assets/close.svg";
@@ -16,7 +17,7 @@ const Navbar = () => {
         <li className="text-xl">Connect Wallet </li>
       </ul>
 
-      <div className="md:hidden flex flex-1 justify-end items-center">
+      <div className="md:hidden flex flex-1 justify-end items-center ">
         <img
           src={toggle ? close : menu}
           alt="menu"
