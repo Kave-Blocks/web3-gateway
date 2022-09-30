@@ -4,6 +4,7 @@ import bitcoin from "../assets/bitcoinSM.svg";
 import nft from "../assets/nft.svg";
 import send from "../assets/send.svg";
 import wallet from "../assets/wallet.svg";
+import "../index.css";
 
 function Explore() {
   return (
@@ -13,15 +14,16 @@ function Explore() {
           {/* <img className="absolute" src={circle} alt="" /> */}
           <h1>Explore our Web3 Courses</h1>
         </div>
-        <div className="container grid grid-cols-2 gap-10 text-white content-evenly">
+
+        <div className="container grid md:grid-cols-2 gap-10 text-white content-evenly">
           {/* Bitcoin */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-slate-800 rounded-2xl">
+          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
             <div>
               <h1 className="text-3xl font-bold pb-5">What is bitcoin?</h1>
               <p className="pb-5 text-xl">
                 "Neque porro quisquam est qui dolorem...
               </p>
-              <button>
+              <button className="border border-orange-400 rounded-xl px-6 py-1">
                 <a href="">Learn More</a>
               </button>
             </div>
@@ -31,7 +33,7 @@ function Explore() {
           </div>
 
           {/* Send and receive */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-slate-800 rounded-2xl">
+          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700  card-explore">
             <div>
               <h1 className="text-3xl font-bold pb-5">
                 Send and receive crypto
@@ -39,7 +41,7 @@ function Explore() {
               <p className="pb-5 text-xl">
                 "Neque porro quisquam est qui dolorem...
               </p>
-              <button>
+              <button className="border border-orange-400 rounded-xl px-6 py-1">
                 <a href="">Learn More</a>
               </button>
             </div>
@@ -49,7 +51,7 @@ function Explore() {
           </div>
 
           {/* Connect Wallet */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-slate-800 rounded-2xl">
+          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
             <div>
               <h1 className="text-3xl font-bold pb-5">
                 How to connect wallet?
@@ -57,7 +59,7 @@ function Explore() {
               <p className="pb-5 text-xl">
                 "Neque porro quisquam est qui dolorem...
               </p>
-              <button>
+              <button className="border border-orange-400 rounded-xl px-6 py-1">
                 <a href="">Learn More</a>
               </button>
             </div>
@@ -67,13 +69,13 @@ function Explore() {
           </div>
 
           {/* NFT */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-slate-800 rounded-2xl">
+          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
             <div>
               <h1 className="text-3xl font-bold pb-5">What is NFT?</h1>
               <p className="pb-5 text-xl">
                 "Neque porro quisquam est qui dolorem...
               </p>
-              <button>
+              <button className="border border-orange-400 rounded-xl px-6 py-1">
                 <a href="">Learn More</a>
               </button>
             </div>
