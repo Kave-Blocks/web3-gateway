@@ -7,7 +7,6 @@ import bitcoin from "../assets/bitcoin.png";
 const Hero = () => {
   return (
     <>
-      {/* <div className="outline outline-1 outline-gray-50 w-[100%] container flex"></div> */}
       <section
         id="home"
         className={`container-fluid flex md:flex-row lg:mt-10 mt-20 flex-col ${styles.paddingY} relative`}

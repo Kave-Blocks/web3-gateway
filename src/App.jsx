@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./style";
+// import { Navbar, Card, Hero } from "./components";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import Explore from "./pages/Explore";
 
-import { Navbar, Card, Hero } from "./components";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -22,6 +27,12 @@ function App() {
       <div className={`bg-black ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`$styles.boxWidth`}>
           <Card />
+        </div>
+      </div>
+
+      <div className={`bg-black ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`$styles.boxWidth`}>
+          <Explore />
         </div>
       </div>
     </div>
