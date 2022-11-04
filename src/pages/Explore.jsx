@@ -9,7 +9,7 @@ import "../index.css";
 function Explore() {
   return (
     <>
-      <section className="relative container-fluid p-10 m-10">
+      <section className="relative container-fluid md:p-10 md:m-10">
         {/* Circle Gradient */}
         <div className="absolute z-[0] w-[15%] h-[15%] right-0 top-10 orange__gradient"></div>
 
@@ -20,7 +20,7 @@ function Explore() {
 
         <div className="container grid md:grid-cols-2 gap-10 text-white content-evenly p-10">
           {/* Bitcoin */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
+          <div className="grid lg:grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
             <div>
               <h1 className="text-3xl font-bold pb-5">What is bitcoin?</h1>
               <p className="pb-5 text-xl">
@@ -31,12 +31,12 @@ function Explore() {
               </button>
             </div>
             <div>
-              <img className=" m-auto" src={bitcoin} alt="" />
+              <img className="m-auto lg:block hidden" src={bitcoin} alt="" />
             </div>
           </div>
 
           {/* Send and receive */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700  card-explore">
+          <div className="grid lg:grid-cols-2 gap-4 p-10 border border-gray-700  card-explore">
             <div>
               <h1 className="text-3xl font-bold pb-5">
                 Send and receive crypto
@@ -49,7 +49,7 @@ function Explore() {
               </button>
             </div>
             <div>
-              <img className=" m-auto" src={send} alt="" />
+              <img className=" m-auto lg:block hidden" src={send} alt="" />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ function Explore() {
           <div className="absolute z-[0] w-[20%] h-[15%] bottom-10 orange__gradient"></div>
 
           {/* Connect Wallet */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
+          <div className="grid lg:grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
             <div>
               <h1 className="text-3xl font-bold pb-5">
                 How to connect wallet?
@@ -70,12 +70,12 @@ function Explore() {
               </button>
             </div>
             <div>
-              <img className=" m-auto" src={wallet} alt="" />
+              <img className="lg:block hidden m-auto" src={wallet} alt="" />
             </div>
           </div>
 
           {/* NFT */}
-          <div className="grid grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
+          <div className="grid lg:grid-cols-2 gap-4 p-10 border border-gray-700 card-explore ">
             <div>
               <h1 className="text-3xl font-bold pb-5">What is NFT?</h1>
               <p className="pb-5 text-xl">
@@ -86,7 +86,7 @@ function Explore() {
               </button>
             </div>
             <div>
-              <img className=" m-auto" src={nft} alt="" />
+              <img className="lg:block hidden m-auto" src={nft} alt="" />
             </div>
           </div>
         </div>
